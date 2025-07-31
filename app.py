@@ -45,7 +45,7 @@ def recommend_restaurants(cuisine, min_price, max_price, city, top_n=5):
 # Streamlit UI
 st.title("🍽️ Restaurant Recommendation System")
 
-city = st.text_input("Enter City (e.g., Delhi)")
+city = st.text_input("Enter City (e.g., New Delhi)")
 cuisine = st.text_input("Enter Cuisine (e.g., North Indian)")
 min_price = st.number_input("Minimum Cost for Two", min_value=0, value=100)
 max_price = st.number_input("Maximum Cost for Two", min_value=0, value=1000)
