@@ -4,7 +4,7 @@ import pandas as pd
 # Step 1: Load and clean the data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:/Users/sarth/Downloads/restaurant recomendation system/Dataset  (2).csv", encoding="latin-1")
+    df = pd.read_csv("Restaurants.csv", encoding="latin-1")
     df = df[["Restaurant Name", "Cuisines", "Average Cost for two", "Aggregate rating", "City"]]
     df.dropna(inplace=True)
     df["City"] = df["City"].astype(str).str.strip().str.lower()
